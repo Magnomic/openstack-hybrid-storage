@@ -1,6 +1,8 @@
-# openstack-hybrid-storage
+# Openstack-hybrid-storage
 
-Authors: Harbin Institue of Technology, Weihai. Distributed and Intelligent Computing Lab
+Authors: Harbin Institue of Technology, Weihai. Distributed and Intelligent Computing Lab.
+
+Any problem please contact zhudongjie@hit.edu.cn.
 
 ## Introduction
 
