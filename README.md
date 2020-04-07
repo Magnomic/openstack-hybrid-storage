@@ -53,15 +53,23 @@ Flow diagram of the replace strategy
 Please install Openstack enviorment before deploy our code at (https://docs.openstack.org/swift/latest/getting_started.html).
 
 ### On proxy server
->systemctl start openstack-swift-proxy.service memcached.service
->/usr/bin/memcached -d -m 64 -u root -c 1024 -p 11211 -P /tmp/memcached.pid
+># systemctl start openstack-swift-proxy.service memcached.service
+
+># /usr/bin/memcached -d -m 64 -u root -c 1024 -p 11211 -P /tmp/memcached.pid
 
 ### On storage server
->systemctl start openstack-swift-account.service openstack-swift-account-auditor.service \
+
+># systemctl start openstack-swift-account.service openstack-swift-account-auditor.service \
+
 >  openstack-swift-account-reaper.service openstack-swift-account-replicator.service
->systemctl start openstack-swift-container.service \
+
+># systemctl start openstack-swift-container.service \
+
 >  openstack-swift-container-auditor.service openstack-swift-container-replicator.service \
+
 >  openstack-swift-container-updater.service
->systemctl start openstack-swift-object.service openstack-swift-object-auditor.service \
+
+># systemctl start openstack-swift-object.service openstack-swift-object-auditor.service \
+
 >  openstack-swift-object-replicator.service openstack-swift-object-updater.service
 
