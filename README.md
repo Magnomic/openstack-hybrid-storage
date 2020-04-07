@@ -7,7 +7,9 @@ Any problem please contact zhudongjie@hit.edu.cn.
 ## Introduction
 
 This work is based on Openstack-swift 2.14.0 and includes proxy nodes and storage nodes.
+
 Proxy node: Receive the data access request, look up the mapping table, obtain the data storage mapping, and forward the parsed data request to the storage node.
+
 Storage node: store the merged metadata and content data, obtain the data content according to the request of the agent node, and return it to the proxy node.
 
 ## Detailed design
@@ -17,19 +19,24 @@ Storage node: store the merged metadata and content data, obtain the data conten
 #### Read process
 
 Flow diagram of the code design
+
 ![](https://github.com/Magnomic/openstack-hybrid-storage/blob/master/readme_pics/read_process.jpg)
 
 Flow diagram of the architecture design
+
 ![](https://github.com/Magnomic/openstack-hybrid-storage/blob/master/readme_pics/read.jpg)
 
 
 #### Write process
 
 Flow diagram of the code design
+
 ![](https://github.com/Magnomic/openstack-hybrid-storage/blob/master/readme_pics/write_process.jpg)
 
 Flow diagram of the architecture design
+
 ![](https://github.com/Magnomic/openstack-hybrid-storage/blob/master/readme_pics/write.jpg)
+
 The "stopfile" is a blank file.
 
 ### SSD based hybrid storage
