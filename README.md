@@ -53,9 +53,9 @@ Flow diagram of the replace strategy
 Please install Openstack enviorment before deploy our code at (https://docs.openstack.org/swift/latest/getting_started.html).
 
 ### On proxy server
-># systemctl start openstack-swift-proxy.service memcached.service
+>$ systemctl start openstack-swift-proxy.service memcached.service
 
-># /usr/bin/memcached -d -m 64 -u root -c 1024 -p 11211 -P /tmp/memcached.pid
+>$ /usr/bin/memcached -d -m 64 -u root -c 1024 -p 11211 -P /tmp/memcached.pid
 
 ### On storage server
 
